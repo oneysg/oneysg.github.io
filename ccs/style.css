@@ -156,6 +156,10 @@ section {
 
   @media (min-width: 1400px) {
 
+    .hero{
+      height: 80vh;
+    }
+
     #idEmpleosCardGroup {
         position: absolute;
         top: 0;
@@ -168,8 +172,17 @@ section {
       transform: translate(20%,50%)
     }
 
+    .jobs{
+      margin-top: 50px; 
+    }
+
     .acerca {
       margin-top: 200px;
+    }
+
+    .contact {
+      margin-top: 150px;
+      height: 75vh;
     }
     
 }
