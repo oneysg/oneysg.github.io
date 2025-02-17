@@ -1,0 +1,178 @@
+
+
+@keyframes progress-grow {
+
+    from { width: 0% }
+    to { width: 100% }
+    
+}
+
+
+.hero {
+    background-image: url("../image/worldmapbg.webp");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section {
+    width: 100%;
+    height: 90vh;
+}
+  
+  .hover-underline {
+    font-size: 2rem;
+    color: #534d4d;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .hover-underline::after,
+  .hover-underline::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #cb1515, #cb1515);
+    bottom: 5px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease-out;
+  }
+  
+  .hover-underline:hover::after,
+  .hover-underline:hover::before {
+    transform: scaleX(1);
+  }
+
+  #idConsultores{
+    width: 270px;
+    background-color: #cb1515;
+    position: absolute;
+    transform: translate(20%,50%)
+  }
+
+  #idInformacionContacto{
+    height: 300px;
+  }
+
+  @media (max-width: 767px) {
+    
+    .hero{
+      height: 100vh;
+    }
+
+    #idRowHero{
+      margin-top: 100px;
+    }
+    
+    #idConsultores{
+      transform: translate(-10%, 50%);
+    }
+
+    #idAcercaDe{
+      margin-top: 100px;
+    }
+
+    .jobs{
+      margin-top: 1100px; 
+    }
+
+    .contact {
+      margin-top: 500px;
+    }
+    
+  }
+
+  @media (min-width: 768px) {
+
+    #idRowHero{
+      margin-top: 100px;
+    }
+
+    .hero{
+      height: 110vh;
+    }
+
+    #idEmpleosCardGroup{
+
+      position: absolute;
+      transform: translateY(-50%);
+    }
+
+    #idConsultores{
+      transform: translate(-10%, 50%);
+    }
+
+    .acerca {
+      margin-top: 200px;
+    }
+
+
+    .jobs{
+      margin-top: 700px; 
+    }
+
+    .contact {
+      margin-top: 300px;
+    }
+
+    
+  }
+
+  @media (min-width: 992px) {
+
+    .hero{
+      height: 80vh;
+    }
+
+    .jobs{
+      margin-top: 300px; 
+    }
+
+    .contact {
+      margin-top: 200px;
+    }
+
+    .acerca {
+      margin-top: 100px;
+    }
+
+
+    
+  }
+
+  @media (min-width: 1200px) {
+
+    .jobs{
+      margin-top: 200px; 
+    }
+
+    .contact {
+      margin-top: 200px;
+    }
+    
+  }
+
+  @media (min-width: 1400px) {
+
+    #idEmpleosCardGroup {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #idConsultores{
+      position: absolute;
+      transform: translate(20%,50%)
+    }
+
+    .acerca {
+      margin-top: 200px;
+    }
+    
+}
+
+
+
