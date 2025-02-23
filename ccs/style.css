@@ -1,22 +1,7 @@
-
-
-@keyframes progress-grow {
-
-    from { width: 0% }
-    to { width: 100% }
-    
-}
-
-
 .hero {
     background-image: url("../image/worldmapbg.webp");
     background-size: cover;
     background-attachment: fixed;
-}
-
-section {
-    width: 100%;
-    height: 90vh;
 }
   
   .hover-underline {
@@ -45,147 +30,69 @@ section {
     transform: scaleX(1);
   }
 
-  #idConsultores{
-    width: 270px;
-    background-color: #cb1515;
-    position: absolute;
-    transform: translate(20%,50%)
-  }
+.card-service {
 
-  #idInformacionContacto{
-    height: 300px;
-  }
-
-  @media (max-width: 767px) {
-    
-    .hero{
-      height: 100vh;
-    }
-
-    #idRowHero{
-      margin-top: 100px;
-    }
-    
-    #idConsultores{
-      transform: translate(-10%, 50%);
-    }
-
-    #idAcercaDe{
-      margin-top: 100px;
-    }
-
-    .jobs{
-      margin-top: 1100px; 
-    }
-
-    .contact {
-      margin-top: 500px;
-    }
-    
-  }
-
-  @media (min-width: 768px) {
-
-    #idRowHero{
-      margin-top: 100px;
-    }
-
-    .hero{
-      height: 110vh;
-    }
-
-    #idEmpleosCardGroup{
-
-      position: absolute;
-      transform: translateY(-50%);
-    }
-
-    #idConsultores{
-      transform: translate(-10%, 50%);
-    }
-
-    .acerca {
-      margin-top: 200px;
-    }
-
-
-    .jobs{
-      margin-top: 700px; 
-    }
-
-    .contact {
-      margin-top: 300px;
-    }
-
-    
-  }
-
-  @media (min-width: 992px) {
-
-    .hero{
-      height: 80vh;
-    }
-
-    .jobs{
-      margin-top: 300px; 
-    }
-
-    .contact {
-      margin-top: 200px;
-    }
-
-    .acerca {
-      margin-top: 100px;
-    }
-
-
-    
-  }
-
-  @media (min-width: 1200px) {
-
-    .jobs{
-      margin-top: 200px; 
-    }
-
-    .contact {
-      margin-top: 200px;
-    }
-    
-  }
-
-  @media (min-width: 1400px) {
-
-    .hero{
-      height: 80vh;
-    }
-
-    #idEmpleosCardGroup {
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    #idConsultores{
-      position: absolute;
-      transform: translate(20%,50%)
-    }
-
-    .jobs{
-      margin-top: 50px; 
-    }
-
-    .acerca {
-      margin-top: 200px;
-    }
-
-    .contact {
-      margin-top: 150px;
-      height: 75vh;
-    }
-    
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.card-service:hover {
+  transform: scale(1.1); /* Amplía la card un 10% */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Aumenta la sombra */
+}
+
+.hero{
+
+  height: 100vh;
+
+  @media (width < 992px) {
+    height: 130vh;
+    
+  }
+}
+
+.hero-subtitle{
+  font-size: 50px;
+}
+
+.row-hero-card-group{
+
+  height: 200px;
+
+  @media (width < 992px) {
+    height: 700px;
+  }
+  @media (width < 576px) {
+    height: 750px;
+  }
+}
+
+.hero-card-group{
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+  @media (width < 992px) {
+    left: 0%;
+    transform: none;
+  }
+
+}
+
+.card-img-servicios{
+  width: 300px;
+  bottom: 0%;
+  right: 0%;
+  background-color: #cb1515;
+  transform: translate(30%, 50%);
+
+  @media (width < 1200px) {
+    right: 5%;
+    transform: translateY(50%)
+    
+  }
+}
+
 
 
 
