@@ -1,0 +1,133 @@
+.hero {
+    background-image: url("../image/worldmapbg.webp");
+    background-size: cover;
+    background-attachment: fixed;
+}
+  
+  .hover-underline {
+    font-size: 2rem;
+    color: #534d4d;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .hover-underline::after,
+  .hover-underline::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #cb1515, #cb1515);
+    bottom: 5px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease-out;
+  }
+  
+  .hover-underline:hover::after,
+  .hover-underline:hover::before {
+    transform: scaleX(1);
+  }
+
+.card-service {
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-service:hover {
+  transform: scale(1.1); /* Amplía la card un 10% */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Aumenta la sombra */
+}
+
+.hero{
+
+  height: 100vh;
+
+  @media (width < 992px) {
+    height: 130vh;
+    
+  }
+}
+
+.hero-subtitle{
+  font-size: 50px;
+}
+
+.row-hero-card-group{
+
+  height: 200px;
+
+  @media (width < 992px) {
+    height: 700px;
+  }
+  @media (width < 576px) {
+    height: 750px;
+  }
+}
+
+.hero-card-group{
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+  @media (width < 992px) {
+    left: 0%;
+    transform: none;
+  }
+
+}
+
+.card-img-servicios{
+  width: 300px;
+  bottom: 0%;
+  right: 0%;
+  background-color: #cb1515;
+  transform: translate(30%, 50%);
+
+  @media (width < 1200px) {
+    right: 5%;
+    transform: translateY(50%)
+    
+  }
+}
+
+.Btn {
+  display: inline-flex;
+  border-color: #0d6efd;
+  color: #0d6efd;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  transition: .3s ease all;
+  overflow: hidden;
+}
+
+.Btn:hover{
+  color: white;
+}
+.Btn:hover::after{
+  left: 0px;
+}
+
+.Btn::after{
+  content: "";
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: -100%;
+  transition: .3s ease-in-out all;
+  border-bottom: 47px solid #286cff;
+  border-right: 18px solid transparent;
+}
+
+.Btn span{
+  position: relative;
+  z-index: 2;
+  transition: .3s ease all;
+}
+
+
+
